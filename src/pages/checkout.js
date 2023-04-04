@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Header from '../components/Header'
+import Head from "next/head";
 import CheckoutProduct from '../components/CheckoutProduct'
 import { useSelector } from 'react-redux'
 import { selectItems, selectTotal } from '../slices/basketSlice'
@@ -14,7 +15,7 @@ function Checkout() {
 
   return (
     <div className='bg-gray-100'>
-            <Head>
+      <Head>
         <title>Checkout</title>
       </Head>
         <Header />
@@ -49,7 +50,7 @@ function Checkout() {
             </div>
         </div>
 
-        <div className='flex flex-col h-16 bg-white p-10 shadow-md'>
+        <div className='flex flex-col bg-white p-10 shadow-md'>
           {items.length > 0 && (
             <>
               <h2 className='whitespace-nowrap'> Subtotal (<b>{items.length}</b> Items): {" "}
