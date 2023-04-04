@@ -46,7 +46,7 @@ function Checkout() {
             </div>
         </div>
 
-        <div className='sticky top-0 flex flex-col h-16 bg-white p-10 shadow-md'>
+        <div className='flex flex-col h-16 bg-white p-10 shadow-md'>
           {items.length > 0 && (
             <>
               <h2 className='whitespace-nowrap'> Subtotal (<b>{items.length}</b> Items): {" "}
