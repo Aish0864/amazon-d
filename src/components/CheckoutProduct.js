@@ -33,7 +33,7 @@ function CheckoutProduct({
   };
 
   const removeItemFromBasket = () => {
-    console.log('remove');
+    //console.log('remove');
     dispatch(removeFromBasket({ id }));
   };
 
@@ -57,7 +57,10 @@ function CheckoutProduct({
           <p className='text-xs my-2 line-clamp-3'>
             {description}
           </p>
-          <Currency quantity={price} Currency="INR"/>
+          <p className='font-bold'>
+          <Currency  quantity={price * 70} currency='INR'/>
+          </p>
+
           {hasPrime && (
             <div className='flex items-center space-x-2 '>
                 <img 
