@@ -59,7 +59,7 @@ function Product({id,title,price,description,category,image }) {
         <p className='text-xs my-2 line-clamp-2'>{description}</p>
         <div className='mb-5 font-bold'>
 
-            <Currency quantity={price * 75} currency='INR'/>
+            <Currency quantity={price * 70} currency='INR'/>
         </div>
 
         {hasPrime && (
