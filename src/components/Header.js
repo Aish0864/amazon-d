@@ -57,8 +57,8 @@ function Header() {
 
         {/*Bottom*/}
         <div className='flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-sm text-white font-semibold' >
-          <p className='link flex items-center'>
-            <MenuIcon className='h-6 mr-1'/>
+          <p className='link flex items-center' onClick={() => router.push('/')}>
+            <MenuIcon className='h-6 mr-1' />
             All
           </p>
           <p className='link'>Beauty & Personal Care</p>
