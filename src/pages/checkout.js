@@ -60,6 +60,7 @@ function Checkout() {
               
               </h2>
               <button 
+              role='link'
               disabled={!session}
               className={`button mt-2 ${
                 !session && 'from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed'
