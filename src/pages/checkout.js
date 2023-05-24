@@ -7,10 +7,10 @@ import { useSelector } from 'react-redux'
 import { selectItems, selectTotal } from '../slices/basketSlice'
 import Currency from 'react-currency-formatter';
 import { useSession } from 'next-auth/react'
-import { loadStripe } from '@stripe/stripe-js';
-import axios from 'axios';
+//import { loadStripe } from '@stripe/stripe-js';
+//import axios from 'axios';
 
-const stripePromise = loadStripe(process.env.stripe_public_key)
+//const stripePromise = loadStripe(process.env.stripe_public_key)
 function Checkout() {
 
   const items = useSelector(selectItems);
@@ -85,11 +85,8 @@ function Checkout() {
               
               </h2>
               <button 
-              role='link'
-<<<<<<< HEAD
-=======
-              onClick={ createCheckoutSession }
->>>>>>> bc44667c325bf6b3c0adfeedae9aaec9c4a5726e
+              //role='link'
+              //onClick={ createCheckoutSession }
               disabled={!session}
               className={`button mt-2 ${
                 !session && 'from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed'
